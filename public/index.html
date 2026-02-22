@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎬 Movie Shows</h1>
+
+  <div class="layout">
+    <div>
+      <h2>Shows</h2>
+      <div id="shows-container"></div>
+    </div>
+
+    <div>
+      <h2>Seats</h2>
+      <div id="seat-status">Select a show to view seats.</div>
+      <div id="seats-container" class="seats-grid"></div>
+
+      <div class="box">
+        <h2>Booking</h2>
+
+        <label>User ID</label>
+        <input id="userId" value="1"/>
+
+        <label>Selected Show</label>
+        <input id="selectedShowId" disabled/>
+
+        <label>Selected Seats</label>
+        <input id="selectedSeats" disabled/>
+
+        <button id="bookBtn">Create Booking</button>
+
+        <div class="result" id="bookingResult"></div>
+        <div class="result" id="bookingResult"></div>
+        <div id="summaryBox" class="summary"></div>
+
+        <h2>Payment</h2>
+        <label>Method</label>
+        <select id="payMethod">
+          <option>UPI</option>
+          <option>CARD</option>
+          <option>CASH</option>
+        </select>
+
+        <button id="payBtn">Make Payment</button>
+        <div class="result" id="payResult"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
